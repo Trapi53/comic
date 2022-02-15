@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+header, nav, footer, article, section, aside, main{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+article{
+    background: darkgray;
+    color: white;
+}
+article{
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /*flex-direction: column;*/
+    gap: 10px;
+}
+aside img{
+    max-width: 200px;
+}
+nav a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;;
+    border-left: 1px solid gray;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    padding: 0;
+    list-style-type: none;
+}
+@media screen and (max-width:700px){
+    section{
+        flex-direction: column ;
+    }
+}
